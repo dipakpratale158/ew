@@ -1,0 +1,127 @@
+.itemContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.itemImage {
+  flex-basis: 50%;
+  max-width: 50%;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.itemImage img {
+  max-width: 100%;
+}
+
+.itemDetails {
+  flex-basis: 50%;
+  max-width: 50%;
+  padding-left: 20px;
+}
+
+.itemDetails h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.itemDetails h2 {
+  font-size: 20px;
+  color: #999;
+  margin: 10px 0;
+}
+
+.itemDetails h3 {
+  font-size: 24px;
+  color: #f80;
+  margin: 10px 0;
+}
+
+.product-data {
+  margin-top: 20px;
+}
+
+.product-data span {
+  display: inline-block;
+  background-color: #f80;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.product-data-price {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.product-data-real-price {
+  color: #f80;
+}
+
+.product-data-warranty {
+  margin-top: 20px;
+}
+
+.product-warranty-data {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.warranty-icon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #f80;
+}
+
+.product-warranty-data p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.product-data-info {
+  margin-top: 20px;
+}
+
+.product-data-info p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.product-data-info span {
+  font-weight: bold;
+  color: rgb(12, 11, 10);
+}
+
+.itemReview {
+  flex-basis: 50%;
+  max-width: 50%;
+  margin-top: 20px;
+}
+
+.reviewtitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.itemReview1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.itemReview1 p:first-child {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.back-to-store-btn{
+  color:black
+}

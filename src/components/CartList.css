@@ -1,0 +1,31 @@
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .cart-item img {
+    margin-right: 30px;
+  }
+  
+  .cart-item h4 {
+    margin: 50;
+  }
+  
+  .cart-item button {
+    margin: 0 15px;
+  }
+   
+  .cart-item .price {
+    margin-left: auto;
+    text-size-adjust: 50px;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+  }
+  .deleteicon {
+    cursor: pointer;
+    color: red;
+    margin: 2rem;
+    font-size: 20px;
+  }

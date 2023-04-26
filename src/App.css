@@ -1,0 +1,273 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  padding:1rem;
+  margin: 1rem;
+}
+.flex1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  
+}
+
+.shopping-cart {
+  justify-content: space-between;
+  background-color: #61dafb;
+  padding: 20px 30px;
+  padding:1rem;
+  margin: 1rem;
+}
+
+.product-item {
+  padding: 20px;
+  text-align: center;
+  padding:1rem;
+  margin: 1rem;
+}
+
+.button {
+  background-color: rgb(53, 166, 211);
+  position: absolute;
+  float: right;
+}
+
+.navBar {
+  background-color: black;
+}
+
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin-left: 5%;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.p {
+  font-size: 17px;
+  margin: 10px;
+  padding: 30px;
+  color: #777;
+  font-weight: "bold";
+}
+
+.img-about {
+  overflow: clip;
+  float: left;
+  margin: 20px 50px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.block {
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 30px;
+}
+
+.butt {
+  float: right;
+}
+
+.generic-section h1 {
+  color: white;
+  font-size: 100px;
+  background-color: gray;
+  font-family: Segoe Print;
+  padding: 50px;
+  text-align: center;
+}
+
+.hover-image:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.a {
+  padding: 5%;
+   padding:1rem;
+  margin: 1rem;
+}
+
+
+
+.color-button.selected {
+  border: 2px solid #000;
+  /* or any other color you prefer */
+}
+
+/* optional: add some hover effect */
+.color-button:hover {
+  transform: scale(1.1);
+}
+/* Center the page content */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Style for product item */
+.product-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Style for product image */
+.product-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style for product title */
+.product-item h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* Style for product price */
+.product-item p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Style for buttons */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Style for grid and list view buttons */
+.button-container button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Style for selected button */
+.button-container button.selected {
+  color: #007bff;
+}
+
+/* Style for search bar */
+.search-bar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style for search input */
+.search-bar input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Style for select input */
+.select-input {
+  margin-left: 10px;
+}
+
+/* Style for color buttons */
+.color {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.color-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.color-button.selected {
+  border: 2px solid #007bff;
+}
+
+/* Style for price inputs */
+.maxprise {
+  margin-left: 20px;
+}
+
+.minprise {
+  margin-left: 10px;
+}
+
+.maxprise input,
+.minprise input {
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+
+.togglegridlistvew{
+   margin-left: 10px;
+}
+
+.searchinput{
+  margin-left: 10px;
+}
