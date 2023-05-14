@@ -29,26 +29,26 @@ const Header = (props) => {
     <>
     <div className={classes.navBar}>
       <Nav className={classes.justifycontentcenter} activeKey="/home">
-      <div style={{margin:'20px'}}><Link to="/">HOME</Link></div>
+      <div style={{margin:'20px',color:"black"}}><Link to="/">HOME</Link></div>
 
-     {isLoggedIn && <div style={{margin:'20px'}}><Link to="/store">STORE</Link></div>}
+     {isLoggedIn && <div style={{margin:'20px',color:"black"}}><Link to="/store">STORE</Link></div>}
 
-      <div style={{margin:'20px'}}><Link to="/about" onClick={() => props.handleShow(false)}>ABOUT</Link></div>
-      <div style={{margin:'20px'}}><Link to="/contact">Contact US</Link></div>
+      <div style={{margin:'20px',color:"black"}}><Link to="/about" onClick={() => props.handleShow(false)}>ABOUT</Link></div>
+      <div style={{margin:'20px',color:"black"}}><Link to="/contact">Contact US</Link></div>
       
-      { !isLoggedIn && <div style={{margin:'20px'}}><Link to="/signup">Sign Up</Link></div>}
+      { !isLoggedIn && <div style={{margin:'20px',color:"black"}}><Link to="/signup">Sign Up</Link></div>}
 
-      {isLoggedIn && <div style={{margin:'20px'}}><Link to="/login" onClick={logoutHandler}>LogOut</Link></div>}
+      {isLoggedIn && <div style={{margin:'20px',color:"black"}}><Link to="/login" onClick={logoutHandler}>LogOut</Link></div>}
       </Nav>
        </div>
     <div className="flex shopping-cart ">
       <h4 style={{fontFamily:'Comic Sans MS'}}>Shopping Cart</h4>
     
-
-<Link to="cart" className={classes.cartsection}>
+ 
+      {isLoggedIn && <Link to="cart" className={classes.cartsection}>
               <FiShoppingCart className={classes.carttrolley} onClick={() => props.handleShow(true)}/>
               <span className={classes.carttotalitem}> {cart.length} </span>
-            </Link>
+            </Link>}
 
 
 

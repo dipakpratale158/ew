@@ -4,7 +4,7 @@
     /* justify-content: center;
     align-items: center; */
     padding: 10px;
-    background-color:#61dafb;
+    background-color:#CCCCCC;
   }
   
   .footer a {
@@ -34,6 +34,6 @@
 
   .shopping-cart{
     justify-content: space-between;
-    background-color: #61dafb;
+    background-color: #CCCCCC;
     padding: 20px 30px;
   }

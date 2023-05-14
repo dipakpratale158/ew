@@ -27,7 +27,7 @@ const ProductDetails = () => {
         <div className="itemDetails">
           <h1>{product.title}</h1>
           <h2>{product.name}</h2>
-          <h3>Price: ${product.price} </h3>
+          <h3>Price: ₹{product.price} </h3>
           <span> 55% off</span>
           <div className="product-data">
           

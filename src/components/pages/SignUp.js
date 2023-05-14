@@ -10,12 +10,15 @@ function SignUp() {
     const history = useNavigate(); 
     const emailInputref = useRef();
     const passwordInputref = useRef();
+    const newpasswordInputref = useRef();
 
     const submitHandler = (e)=>{
         e.preventDefault();
         const enteredEmail = emailInputref.current.value
         const enteredpassword = passwordInputref.current.value
-        localStorage.setItem('userEmail', enteredEmail)
+        const newenteredpassword = newpasswordInputref.current.value
+
+       localStorage.setItem('userEmail', enteredEmail)
         //console.log(enteredEmail,enteredpassword)
 
         fetch('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyA8_s81px03_ZgvH0948868T6K6XoBBXMw',{
@@ -23,6 +26,8 @@ function SignUp() {
             body:JSON.stringify({
                 email:enteredEmail,
                 password:enteredpassword,
+                newpassword:newenteredpassword,
+
                 returnSecureToken:true
             }),
             headers:{
@@ -71,6 +76,12 @@ function SignUp() {
           <Form.Label>Password</Form.Label>
           <Form.Control type="password" placeholder="Password" ref={passwordInputref} style={{backgroundColor:'#F8F8FF', border:'none', borderRadius:'5px'}}/>
         </Form.Group>
+
+        <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Label>New Password</Form.Label>
+          <Form.Control type="password" placeholder="newPassword" ref={newpasswordInputref} style={{backgroundColor:'#F8F8FF', border:'none', borderRadius:'5px'}}/>
+        </Form.Group>
+        
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
           <Form.Check type="checkbox" label="Check me out" style={{color:'#333333'}} />
         </Form.Group>

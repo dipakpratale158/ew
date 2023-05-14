@@ -6,7 +6,7 @@
     display: flex;
     width: 100%;
     font-size: 20px;
-    background-color: rgb(238, 162, 162);
+    background-color: #FF9500;
     padding-bottom: 10px;
 }
 .justifycontentcenter {
@@ -103,7 +103,7 @@
 }
 
 .seeCartBtn:hover {
-  background-color: #0069d9;
+  background-color: #0044CC;
 }
 .seeCartBtn:hover {
   background-color: #d4ac56;

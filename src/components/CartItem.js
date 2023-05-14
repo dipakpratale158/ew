@@ -13,9 +13,9 @@ catrgory:"Populer",
     imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%201.png",
 
     ProductReview: [
-      { name: "Milan", review: "I recommend this product" },
+      { name: "Dipak", review: "I recommend this product" },
 
-      { name: "Vikesh", review: "ok, product" },
+      { name: "ganesh", review: "ok, product" },
 
       { name: "Zoya", review: "good in this price" },
 

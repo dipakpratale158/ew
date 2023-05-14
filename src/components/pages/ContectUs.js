@@ -33,11 +33,12 @@ const ContactUs = ()  => {
   }
 
   return (
-    <div style={{margin:'5%',paddingBottom:'10%'}}>
-       <Form onSubmit={submitHandler}>
-       <Form.Group className="mb-3" controlId="formBasicPassword">
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#f9f9f9' }}>
+  <div style={{ width: '50%', border: '2px solid #ccc', borderRadius: '5px', padding: '20px' }}>
+    <Form onSubmit={submitHandler}>
+      <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Name</Form.Label>
-        <Form.Control type="text" placeholder="enter name" ref={nameRef}  />
+        <Form.Control type="text" placeholder="enter name" ref={nameRef} />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
@@ -46,7 +47,6 @@ const ContactUs = ()  => {
           We'll never share your email with anyone else.
         </Form.Text>
       </Form.Group>
-
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Mobile Number</Form.Label>
         <Form.Control type="number" placeholder="mobile number" ref={numberRef} />
@@ -58,8 +58,8 @@ const ContactUs = ()  => {
         Submit
       </Button>
     </Form>
-    
-    </div>
+  </div>
+</div>
   )
 }
 
