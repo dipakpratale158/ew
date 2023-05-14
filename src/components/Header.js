@@ -58,7 +58,8 @@ const Header = (props) => {
       </Link>
     </div>
 }
-<div style={{margin:'20px',color:"black"}}><Link to="/movies" style={linkStyle} >Entertentment</Link></div>
+<div style={{margin:'20px',color:"black"}}><Link to="/movies" style={linkStyle} >
+Entertainment</Link></div>
 
       <div style={{margin:'20px',color:"black"}}><Link to="/about" style={linkStyle} onClick={() => props.handleShow(false)}>ABOUT</Link></div>
       <div style={{margin:'20px',color:"black"}}><Link to="/contact" style={linkStyle}>Contact US</Link></div>
