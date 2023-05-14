@@ -20,7 +20,7 @@ function LogIn() {
 
         //console.log(enteredEmail,enteredpassword)
 
-        fetch('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyA8_s81px03_ZgvH0948868T6K6XoBBXMw',{
+        fetch('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAqoDBXkEaYGVlxRqUL3QVoVDfW-kFExz0',{
             method:'POST',
             body:JSON.stringify({
                 email:enteredEmail,

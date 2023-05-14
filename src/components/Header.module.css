@@ -20,6 +20,18 @@
   position: relative;
 }
 
+
+.storeLink {
+  animation-name: dance;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes dance {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
 .carttrolley {
   font-size: 1.5rem;
   margin-left: 5px;

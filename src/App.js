@@ -15,6 +15,7 @@ import ContactUs from "./components/pages/ContectUs";
  import AuthContext from "./components/store/AuthContext";
  import Footer from "./components/Footer/Footer";
 import SignUp from "./components/pages/SignUp";
+import MoviePage from "./components/Entertentment.js/MoviesPage";
 
 //const Home = lazy(()=>import("./components/pages/Home"))
 const Store = lazy(()=>import("./components/pages/Store"))
@@ -40,6 +41,8 @@ const App = () => {
           
           <Route path="/" element={<Home />} />
           <Route path="store" element={<Suspense><Store /></Suspense>} />
+          <Route path = '/movies'  element={<MoviePage/>}/>
+
           <Route path="about" element={<Suspense><About /></Suspense>} />
           <Route path="contact" element={<ContactUs />} />
           {<Route path="/product/:id" element={<Suspense><ProductDetail /></Suspense>} />}

@@ -7,7 +7,7 @@ const CartContext = ({ children }) => {
   const [cart, setCart] = useState([]);
 
   const saveCartToFirebase = () => {
-    fetch(`https://ecommerce-website-23bc9-default-rtdb.firebaseio.com/${localStorage.getItem('xyz')}.json`, {
+    fetch(`https://reactreq-default-rtdb.firebaseio.com/${localStorage.getItem('xyz')}.json`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ const CartContext = ({ children }) => {
   
 
   const getSavedData = () => {
-    fetch(`https://ecommerce-website-23bc9-default-rtdb.firebaseio.com/${localStorage.getItem('xyz')}.json`)
+    fetch(`https://reactreq-default-rtdb.firebaseio.com/${localStorage.getItem('xyz')}.json`)
       .then((res) => {
         if (res.ok) {
           return res.json();
@@ -86,7 +86,7 @@ const CartContext = ({ children }) => {
   };
 
   const emptycartHandler = () => {
-    fetch(`https://ecommerce-website-23bc9-default-rtdb.firebaseio.com/${localStorage.getItem('xyz')}.json`, {
+    fetch(`https://reactreq-default-rtdb.firebaseio.com/${localStorage.getItem('xyz')}.json`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

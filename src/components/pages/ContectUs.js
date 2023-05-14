@@ -18,7 +18,7 @@ const ContactUs = ()  => {
     }
     console.log(data)
 
-     fetch('https://ecomerce-website-contactus-default-rtdb.firebaseio.com/contactInfo.json',{
+     fetch('https://reactreq-default-rtdb.firebaseio.com/contactInfo.json',{
       method:'POST',
       body:JSON.stringify(data),
       headers:{
