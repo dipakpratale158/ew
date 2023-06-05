@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Form, Button, Card} from 'react-bootstrap';
 import { useContext } from 'react';
 import MovieContext from '../store/MovieContext';
+//added movies
+
 async function addMovie(movieData , setMovieList , movieList){
     const response =  await fetch('https://reactreq-default-rtdb.firebaseio.com/movies.json', {
         method: 'POST',
